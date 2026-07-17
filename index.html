@@ -261,12 +261,88 @@
     <p><strong>Create New -&gt; Collection Items</strong></p>
     <p class="center"><img src="imgs/9-add-collection-item.png" alt="Add New Collection Item" width="900"></p>
     <p>You must fill in all required fields including adding an image and then hit save.</p>
+    <h4>Editable Fields in Collection Items</h4>
+    <blockquote>
+        <p><span class="emoji">💡</span> <strong>Fields marked required must be filled in before you can save.</strong>
+            Optional fields can be left blank.</p>
+    </blockquote>
+    <table>
+        <thead>
+            <tr>
+                <th>Field</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Status</strong></td>
+                <td>Set to <strong>Published</strong> for the item to appear on the live Collection page, or
+                    <strong>Draft</strong> to hide it.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Type</strong></td>
+                <td>What kind of item this is: <strong>Article</strong>, <strong>Podcast</strong>,
+                    <strong>Video</strong>, <strong>Book</strong>, <strong>Documentary</strong>,
+                    <strong>Report</strong>,
+                    or <strong>Other</strong>.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Title</strong></td>
+                <td>The headline shown on the card. Required.</td>
+            </tr>
+            <tr>
+                <td><strong>Summary</strong></td>
+                <td>Short plain-text description shown on the card. Required.</td>
+            </tr>
+            <tr>
+                <td><strong>URL</strong></td>
+                <td>The link to the item on the web (article, video page, publisher page, etc.). Clicking the card opens
+                    this URL. Required.</td>
+            </tr>
+            <tr>
+                <td><strong>Author</strong></td>
+                <td>The person who wrote or presented the piece (e.g. a journalist, author, or podcast guest). Shown in
+                    the card byline. Required.</td>
+            </tr>
+            <tr>
+                <td><strong>Site Name</strong></td>
+                <td><em>Optional.</em> The name of the publication or publisher (e.g. <em>Tricontinental</em>,
+                    <em>Verso Books</em>). Appears in the byline after the author, separated by <strong>|</strong>. For
+                    books this may be the publisher.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Site URL</strong></td>
+                <td><em>Optional.</em> The website of the publication. When set, <strong>Site Name</strong> becomes a
+                    blue clickable link to this address (opens in a new tab). Leave blank if you only want the name
+                    shown as plain text.</td>
+            </tr>
+            <tr>
+                <td><strong>Image</strong></td>
+                <td>Cover image or thumbnail for the card. Required.</td>
+            </tr>
+            <tr>
+                <td><strong>Published At</strong></td>
+                <td><em>Optional.</em> Publication or release date shown on the card.</td>
+            </tr>
+            <tr>
+                <td><strong>Topics</strong></td>
+                <td>At least one topic tag (e.g. Geopolitics, Economics). Required.</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>On the website, the byline appears as: <strong>Author | Site Name</strong> (when Site Name is set). Example:
+        <em>Vijay Prashad | Tricontinental</em> — with Site URL set, <em>Tricontinental</em> links to the publication
+        website.
+    </p>
     <p class="center"><img src="imgs/10-edit-and-save-collection-item.png" alt="Edit and Save New Collection Item"
             width="900"></p>
     <p></p>
     <h3>Hero Image Tips</h3>
     <p>To find a suitable hero image, I recommend using <a href="https://www.google.com/advanced_image_search"
-            target="_blank"></a>Google Advanced Image Search</a>.</p>
+            target="_blank">Google Advanced Image Search</a>.</p>
     <blockquote>
         <strong>
             <p>💡 Google is obviously not our friend but for this purpose it is very useful.</p>
@@ -275,8 +351,8 @@
     <h4>
         <a href="https://www.google.com/advanced_image_search" target="_blank">Advanced Image Search</a>
     </h4>
-    <p>It must be a wide image that is at least 2,560px wide and 1,920px high. It must be a high-quality image that is
-        free of copyright restrictions.</p>
+    <p>It must be a wide image that is at least 2,560px wide and 1,920px high. Please use a high-quality image so it
+        looks good in the design of the page.</p>
     <p>Use the following filters to find a suitable image:</p>
     <ul>
         <strong>
@@ -296,7 +372,13 @@
     </ol>
     <blockquote>
         <p><span class="emoji">‼️</span> <strong>Saving the Collection will automatically trigger a website deploy;
-                expect 3-5 minutes for the new or updated Collection to be live.</strong></p>
+                expect 3-5 minutes for the new or updated Collection to be live. If you save the Collection with a
+                status of "Draft", the changes will not be published to the website until you update the status to
+                "Published".</strong></p>
+        <p><span class="emoji">‼️</span> <strong>If you wish to unpublish the Collection, you can update the status to
+                "Draft" and save the Collection. This will remove the Collection from the website after 3-5
+                minutes.</strong>
+        </p>
     </blockquote>
     <p class="center"><img src="imgs/5-save-collection.png" alt="Save Collection" width="900"></p>
     <ol start="5">
