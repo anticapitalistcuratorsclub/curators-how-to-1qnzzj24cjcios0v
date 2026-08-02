@@ -233,11 +233,20 @@
     </table>
     <h1><span class="emoji">📦</span> Populating the Collection Contents</h1>
     <p>There are two ways to populate the contents of a Collection:</p>
-    <h2><span class="emoji">💫</span> External Items</h2>
+    <h2><span class="emoji">💫</span> External Items (Add from Existing Database)</h2>
     <p><em><strong>External Items</strong></em> are items from within the already indexed database that are associated
-        to existing <strong>Resources</strong>.</p>
+        to existing <strong>Resources</strong>. You can <strong>only ADD existing items</strong> from the database here
+        — you cannot
+        create new ones.</p>
     <blockquote>
-        <p><em>At the time of writing there were 8,055 articles, 2,584 podcasts and 5,221 videos</em></p>
+        <p><span class="emoji">😅</span> <strong>Apologies for the confusing naming!</strong> "External Items" are
+            actually
+            items that are already IN our database (from established Resource publishers). "Collection Items" (below)
+            are the
+            ones you create from scratch.</p>
+    </blockquote>
+    <blockquote>
+        <p><em>At the time of writing there were 8,145 articles, 2,629 podcasts and 5,509 videos</em></p>
     </blockquote>
     <p>To add an existing external item click:</p>
     <p><strong>Add Existing -&gt; External Items</strong></p>
@@ -252,11 +261,17 @@
         <li>Then click the checkmark button at the top right to add them to the Collection.</li>
     </ol>
     <p class="center"><img src="imgs/8-search-and-select.png" alt="Search And Select External Items" width="900"></p>
-    <h2><span class="emoji">📕</span> Collection Items</h2>
-    <p><em><strong>Collection Items </strong></em>are any items from anywhere on the internet that you may want to
-        manually add to your Collection.</p>
-    <p>They can be<strong> Books, Documentaries, Reports or Other</strong> as well as <strong>Articles, Podcasts and
+    <h2><span class="emoji">📕</span> Collection Items (Create from Scratch)</h2>
+    <p><em><strong>Collection Items</strong></em> are items you create from scratch — any content from anywhere on the
+        internet that you may want to manually add to your Collection. You can <strong>only CREATE NEW items</strong>
+        here.</p>
+    <p>They can be <strong>Books, Documentaries, Reports or Other</strong> as well as <strong>Articles, Podcasts and
             Videos</strong>.</p>
+    <blockquote>
+        <p><span class="emoji">😅</span> <strong>Apologies for the confusing naming!</strong> "Collection Items" are
+            actually the ones created manually by Curators. "External Items" (above) are items already in the database.
+            Collection Items = "create new", External Items = "add existing".</p>
+    </blockquote>
     <p>To add a new collection item click:</p>
     <p><strong>Create New -&gt; Collection Items</strong></p>
     <p class="center"><img src="imgs/9-add-collection-item.png" alt="Add New Collection Item" width="900"></p>
@@ -299,7 +314,30 @@
             <tr>
                 <td><strong>URL</strong></td>
                 <td>The link to the item on the web (article, video page, publisher page, etc.). Clicking the card opens
-                    this URL. Required.</td>
+                    this URL. <strong>Required for Articles, Podcasts, Videos, Documentaries, and Other</strong>
+                    types. Optional for <strong>Books, Reports, and Articles</strong> if you upload a file
+                    Attachment instead. Mutually exclusive with <strong>Attachment</strong> — you can set
+                    <strong>either</strong> URL or Attachment but <strong>not both</strong>, and
+                    <strong>exactly one</strong> must be set.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Attachment</strong></td>
+                <td><span class="emoji">📎</span> <strong>NEW</strong> — Upload a PDF or EPUB file (max 10MB). Clicking
+                    the card downloads the file instead of following a URL. Mutually exclusive with
+                    <strong>URL</strong>.
+                    <br><br>
+                    <span class="emoji">📄</span> <strong>PDF files</strong> are only allowed for Collection Items of
+                    type
+                    <strong>Article</strong> or <strong>Report</strong>.
+                    <br>
+                    <span class="emoji">📚</span> <strong>EPUB files</strong> are only allowed for Collection Items of
+                    type <strong>Book</strong>.
+                    <br><br>
+                    When a Collection Item has an attachment, a <span class="emoji">💾</span> download badge appears on
+                    the
+                    card and the tooltip shows a download icon instead of an external link icon.
+                </td>
             </tr>
             <tr>
                 <td><strong>Author</strong></td>
@@ -333,10 +371,39 @@
             </tr>
         </tbody>
     </table>
+    <p class="center"><strong><span class="emoji">📸</span> TODO: Screenshot of Collection Items create/edit panel
+            showing both URL and Attachment fields</strong></p>
+    <p class="center"><img src="imgs/13-collection-item-url-attachment.png"
+            alt="Collection Item URL and Attachment fields in Directus" width="900"></p>
     <p>On the website, the byline appears as: <strong>Author | Site Name</strong> (when Site Name is set).</p>
     <p class="center"><img src="imgs/10-edit-and-save-collection-item.png" alt="Edit and Save New Collection Item"
             width="900"></p>
     <p></p>
+    <h3><span class="emoji">📎</span> File Attachments (PDFs and EPUBs)</h3>
+    <p>Instead of linking to an external URL, you can upload a <strong>PDF or EPUB file</strong> (max 10MB) that users
+        can download directly by clicking the Collection Item card.</p>
+    <blockquote>
+        <p><span class="emoji">⚠️</span> <strong>Important rules for attachments:</strong></p>
+        <ul>
+            <li><strong>Mutual exclusivity:</strong> A Collection Item can have <strong>either</strong> a URL
+                <strong>or</strong> a file attachment — <strong>not both</strong>. You must set exactly one.
+            </li>
+            <li><span class="emoji">📄</span> <strong>PDF files</strong> may only be attached to items of type
+                <strong>Article</strong> or <strong>Report</strong>.
+            </li>
+            <li><span class="emoji">📚</span> <strong>EPUB files</strong> may only be attached to items of type
+                <strong>Book</strong>.
+            </li>
+            <li>The system will show a clear error if you try to save with both URL and Attachment set, or with the
+                wrong file type for the chosen Collection Item type.</li>
+        </ul>
+    </blockquote>
+    <p>When an attachment is present, the Collection Item card on the website will show:</p>
+    <ul>
+        <li>A <span class="emoji">💾</span> download badge in the bottom-right corner of the card</li>
+        <li>A download icon (instead of an external link icon) in the hover tooltip</li>
+        <li>Clicking the card downloads the file, rather than opening a URL</li>
+    </ul>
     <h3><span class="emoji">🖼️</span> Hero Image Tips</h3>
     <p>To find a suitable hero image, I recommend using <a href="https://www.google.com/advanced_image_search"
             target="_blank">Google Advanced Image Search</a>.</p>
