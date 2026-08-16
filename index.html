@@ -180,8 +180,10 @@
         </ol>
         <p class="toc-section"><a href="#populating-contents">📦 Populating the Collection Contents</a></p>
         <ol class="toc-list">
-            <li><a href="#external-items">💫 External Items (Add from Existing Database)</a></li>
-            <li><a href="#collection-items">📕 Collection Items (Create from Scratch)</a></li>
+            <li><a href="#external-items">💫 External Items (Add Existing or Create New)</a></li>
+            <li><a href="#external-item-fields">✏️ Editable Fields in External Items</a></li>
+            <li><a href="#file-attachments">📎 File Attachments (PDFs and EPUBs)</a></li>
+            <li><a href="#saving-collection">💾 Saving Your Collection</a></li>
         </ol>
         <ol class="toc-list" start="4">
             <li><a href="#getting-help">💬 Getting help</a></li>
@@ -295,32 +297,23 @@
                     Philosophy)</td>
             </tr>
             <tr>
-                <td><strong>Collection Contents</strong></td>
+                <td><strong>External Items</strong></td>
                 <td><span class="emoji">‼️</span> <strong>The main contents of the Collection</strong> &mdash; articles,
-                    podcasts, videos, books, papers. Can be <strong>"External Items"</strong> (existing searchable
-                    database items) and/or <strong>"Collection Items"</strong> (external links you add yourself).
+                    podcasts, videos, books, reports, documentaries. You can either <strong>"Add Existing"</strong>
+                    items from the searchable database or <strong>"Create New"</strong> items from scratch.
                     <strong>See "Populating the Collection Contents" section below for more details.</strong>
                 </td>
             </tr>
         </tbody>
     </table>
     <h1 id="populating-contents"><span class="emoji">📦</span> Populating the Collection Contents</h1>
-    <p>There are two ways to populate the contents of a Collection:</p>
-    <h2 id="external-items"><span class="emoji">💫</span> External Items (Add from Existing Database)</h2>
-    <p><em><strong>External Items</strong></em> are items from within the already indexed database that are associated
-        to existing <strong>Resources</strong>. You can <strong>only ADD existing items</strong> from the database here
-        — you cannot
-        create new ones.</p>
-    <blockquote>
-        <p><span class="emoji">😅</span> <strong>Apologies for the confusing naming!</strong> "External Items" are
-            actually
-            items that are already IN our database (from established Resource publishers). "Collection Items" (below)
-            are the
-            ones you create from scratch.</p>
-    </blockquote>
-    <blockquote>
-        <p><em>At the time of writing there were 8,145 articles, 2,629 podcasts and 5,509 videos</em></p>
-    </blockquote>
+    <p>Collection contents are made up of <strong>External Items</strong> — the articles, podcasts, videos, books,
+        reports, and documentaries that appear on a Collection page. You can either <strong>Add Existing</strong> items
+        from the searchable database, or <strong>Create New</strong> items from scratch.</p>
+    <h2 id="external-items"><span class="emoji">💫</span> External Items (Add Existing or Create New)</h2>
+    <p>There are two ways to add items to a Collection:</p>
+    <h3><span class="emoji">➕</span> Add Existing (from the database)</h3>
+    <p>Search the 15,000+ items already in the database and attach them to the Collection without recreating them.</p>
     <p>To add an existing external item click:</p>
     <p><strong>Add Existing -&gt; External Items</strong></p>
     <p class="center"><img src="imgs/6-add-external-item.png" alt="Add External Item" width="900"></p>
@@ -334,25 +327,21 @@
         <li>Then click the checkmark button at the top right to add them to the Collection.</li>
     </ol>
     <p class="center"><img src="imgs/8-search-and-select.png" alt="Search And Select External Items" width="900"></p>
-    <h2 id="collection-items"><span class="emoji">📕</span> Collection Items (Create from Scratch)</h2>
-    <p><em><strong>Collection Items</strong></em> are items you create from scratch — any content from anywhere on the
-        internet that you may want to manually add to your Collection. You can <strong>only CREATE NEW items</strong>
-        here.</p>
-    <p>They can be <strong>Books, Documentaries, Reports or Other</strong> as well as <strong>Articles, Podcasts and
-            Videos</strong>.</p>
-    <blockquote>
-        <p><span class="emoji">😅</span> <strong>Apologies for the confusing naming!</strong> "Collection Items" are
-            actually the ones created manually by Curators. "External Items" (above) are items already in the database.
-            Collection Items = "create new", External Items = "add existing".</p>
-    </blockquote>
-    <p>To add a new collection item click:</p>
-    <p><strong>Create New -&gt; Collection Items</strong></p>
-    <p class="center"><img src="imgs/9-add-collection-item.png" alt="Add New Collection Item" width="900"></p>
-    <p>You must fill in all required fields including adding an image and then hit save.</p>
-    <h4><span class="emoji">✏️</span> Editable Fields in Collection Items</h4>
+    <h3><span class="emoji">🆕</span> Create New (from scratch)</h3>
+    <p><em>You can also create a brand-new item directly inside the Collection.</em> This is useful when you have
+        found a book, report, documentary, or article that is not yet in the database. You can create
+        <strong>Books 📙, Reports, Documentaries 🎬, Articles, Podcasts</strong> and <strong>Videos</strong> (there is
+        no "Other" type). You must fill in all required fields including adding a single image, and then hit save.
+    </p>
+    <p>Click <strong>Create New -&gt; External Items</strong> inside the Collection's External Items section, fill in
+        the fields below, and save.</p>
+    <p>Created items are automatically linked to the "Resources Not Added" resource, so they appear in the Collection
+        and in search results.</p>
+    <h2 id="external-item-fields"><span class="emoji">✏️</span> Editable Fields in External Items</h2>
     <blockquote>
         <p><span class="emoji">💡</span> <strong>Fields marked required must be filled in before you can save.</strong>
-            Optional fields can be left blank.</p>
+            Optional fields can be left blank. The system validates your entry and shows a clear error message if any
+            rule is not met.</p>
     </blockquote>
     <table>
         <thead>
@@ -370,10 +359,9 @@
             </tr>
             <tr>
                 <td><strong>Type</strong></td>
-                <td>What kind of item this is: <strong>Article</strong>, <strong>Podcast</strong>,
-                    <strong>Video</strong>, <strong>Book</strong>, <strong>Documentary</strong>,
-                    <strong>Report</strong>,
-                    or <strong>Other</strong>.
+                <td>What kind of item this is: <strong>Book 📙</strong>, <strong>Report</strong>,
+                    <strong>Documentary 🎬</strong>, <strong>Article</strong>, <strong>Podcast</strong>, or
+                    <strong>Video</strong>. There is no "Other" option.
                 </td>
             </tr>
             <tr>
@@ -387,52 +375,52 @@
             <tr>
                 <td><strong>URL</strong></td>
                 <td>The link to the item on the web (article, video page, publisher page, etc.). Clicking the card opens
-                    this URL. <strong>Required for Articles, Podcasts, Videos, Documentaries, and Other</strong>
-                    types. Optional for <strong>Books, Reports, and Articles</strong> if you upload a file
-                    Attachment instead. Mutually exclusive with <strong>Attachment</strong> — you can set
-                    <strong>either</strong> URL or Attachment but <strong>not both</strong>, and
-                    <strong>exactly one</strong> must be set.
+                    this URL. <strong>Required for all types except Books and Reports</strong>, where you may instead
+                    upload a file Attachment. <strong>Books and Reports</strong> may have <strong>both</strong> a URL
+                    and an Attachment.
                 </td>
             </tr>
             <tr>
                 <td><strong>Attachment</strong></td>
-                <td><span class="emoji">📎</span> <strong>NEW</strong> — Upload a PDF or EPUB file (max 10MB). Clicking
-                    the card downloads the file instead of following a URL. Mutually exclusive with
-                    <strong>URL</strong>.
+                <td><span class="emoji">📎</span> — Upload a <strong>PDF or EPUB</strong> file (max 10MB). Clicking
+                    the card downloads the file instead of following a URL.
                     <br><br>
-                    <span class="emoji">📄</span> <strong>PDF files</strong> are only allowed for Collection Items of
-                    type
-                    <strong>Article</strong> or <strong>Report</strong>.
+                    <span class="emoji">📚</span> <strong>EPUB files</strong> are only allowed for items of type
+                    <strong>Book</strong>.
                     <br>
-                    <span class="emoji">📚</span> <strong>EPUB files</strong> are only allowed for Collection Items of
-                    type <strong>Book</strong>.
+                    <span class="emoji">📄</span> <strong>PDF files</strong> are only allowed for items of type
+                    <strong>Book</strong> or <strong>Report</strong>.
                     <br><br>
-                    When a Collection Item has an attachment, a <span class="emoji">💾</span> download badge appears on
-                    the
-                    card and the tooltip shows a download icon instead of an external link icon.
+                    <span class="emoji">💡</span> <strong>Rule:</strong> only <strong>Books</strong> and
+                    <strong>Reports</strong> can have file attachments. For all other types, an attachment is forbidden
+                    and a URL is required.
+                    <br><br>
+                    When an item has an attachment, a <span class="emoji">💾</span> download badge appears on the card
+                    and the tooltip shows a download icon instead of an external link icon.
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Image (or Image URL)</strong></td>
+                <td><span class="emoji">🖼️</span> <strong>Exactly one is required</strong> for every item: either an
+                    uploaded <strong>Image</strong> file OR an <strong>Image URL (og_image)</strong>, but never both and
+                    never neither. The system will reject a save that has neither or both.
                 </td>
             </tr>
             <tr>
                 <td><strong>Author</strong></td>
                 <td>The person who wrote or presented the piece (e.g. a journalist, author, or podcast guest). Shown in
-                    the card byline. Required.</td>
+                    the card byline. <strong>Required.</strong></td>
             </tr>
             <tr>
                 <td><strong>Site Name</strong></td>
                 <td><em>Optional.</em> The name of the publication or publisher. Appears in the byline after the author,
-                    separated by <strong>|</strong>. For
-                    books this may be the publisher.
-                </td>
+                    separated by <strong>|</strong>. For books this may be the publisher.</td>
             </tr>
             <tr>
                 <td><strong>Site URL</strong></td>
                 <td><em>Optional.</em> The website of the publication. When set, <strong>Site Name</strong> becomes a
                     blue clickable link to this address (opens in a new tab). Leave blank if you only want the name
                     shown as plain text.</td>
-            </tr>
-            <tr>
-                <td><strong>Image</strong></td>
-                <td>Cover image or thumbnail for the card. Required.</td>
             </tr>
             <tr>
                 <td><strong>Published At</strong></td>
@@ -445,28 +433,36 @@
         </tbody>
     </table>
     <p class="center"><img src="imgs/13-collection-item-url-attachment.png"
-            alt="Collection Item URL and Attachment fields in Directus" width="900"></p>
+            alt="External Item URL and Attachment fields in Directus" width="900"></p>
+    <blockquote>
+        <p><span class="emoji">📷</span> <strong>Screenshot may be outdated.</strong> It shows the old "Collection
+            Item" form — the merged "External Item" form looks similar. A new screenshot is a follow-up task.</p>
+    </blockquote>
     <p>On the website, the byline appears as: <strong>Author | Site Name</strong> (when Site Name is set).</p>
-    <p class="center"><img src="imgs/10-edit-and-save-collection-item.png" alt="Edit and Save New Collection Item"
+    <p class="center"><img src="imgs/10-edit-and-save-collection-item.png" alt="Edit and Save New External Item"
             width="900"></p>
+    <blockquote>
+        <p><span class="emoji">📷</span> <strong>Screenshot may be outdated.</strong> It references the old "Collection
+            Item" form. New screenshots are a human follow-up task.</p>
+    </blockquote>
     <p></p>
-    <h3><span class="emoji">📎</span> File Attachments (PDFs and EPUBs)</h3>
+    <h3 id="file-attachments"><span class="emoji">📎</span> File Attachments (PDFs and EPUBs)</h3>
     <p>Instead of linking to an external URL, you can upload a <strong>PDF or EPUB file</strong> (max 10MB) that users
-        can download directly by clicking the Collection Item card.</p>
+        can download directly by clicking the External Item card.</p>
     <blockquote>
         <p><span class="emoji">⚠️</span> <strong>Important rules for attachments:</strong></p>
         <ul>
-            <li><strong>Mutual exclusivity:</strong> A Collection Item can have <strong>either</strong> a URL
-                <strong>or</strong> a file attachment — <strong>not both</strong>. You must set exactly one.
-            </li>
-            <li><span class="emoji">📄</span> <strong>PDF files</strong> may only be attached to items of type
-                <strong>Article</strong> or <strong>Report</strong>.
-            </li>
+            <li><strong>Books and Reports</strong> may have <strong>either</strong> a URL or a file attachment, and may
+                even have <strong>both</strong>. All other types require a URL and are forbidden from having an
+                attachment.</li>
             <li><span class="emoji">📚</span> <strong>EPUB files</strong> may only be attached to items of type
                 <strong>Book</strong>.
             </li>
-            <li>The system will show a clear error if you try to save with both URL and Attachment set, or with the
-                wrong file type for the chosen Collection Item type.</li>
+            <li><span class="emoji">📄</span> <strong>PDF files</strong> may only be attached to items of type
+                <strong>Book</strong> or <strong>Report</strong>.
+            </li>
+            <li>The system will show a clear error if you try to save with the wrong file type for the chosen item
+                type, or an attachment on a non-book/report item.</li>
         </ul>
     </blockquote>
     <blockquote class="copyright-notice">
@@ -478,12 +474,14 @@
             <li>When in doubt: <strong>link, don't upload.</strong></li>
         </ul>
     </blockquote>
-    <p>When an attachment is present, the Collection Item card on the website will show:</p>
+    <p>When an attachment is present, the External Item card on the website will show:</p>
     <ul>
         <li>A <span class="emoji">💾</span> download badge in the bottom-right corner of the card</li>
         <li>A download icon (instead of an external link icon) in the hover tooltip</li>
         <li>Clicking the card downloads the file, rather than opening a URL</li>
     </ul>
+    <h3>The External Item card on the website shows the <strong>byline</strong> as <strong>Author | Site Name</strong>
+        (when Site Name is set).</h3>
     <h3><span class="emoji">🖼️</span> Hero Image Tips</h3>
     <p>To find a suitable hero image, I recommend using <a href="https://www.google.com/advanced_image_search"
             target="_blank">Google Advanced Image Search</a>.</p>
@@ -510,9 +508,9 @@
     <p class="center"><img src="imgs/11-advanced-image-search.png" alt="Advanced Image Search" width="900"></p>
     <p>Example search results:</p>
     <p class="center"><img src="imgs/12-image-search-results.png" alt="Advanced Image Search Results" width="900"></p>
-    <h3><span class="emoji">💾</span> Saving Your Collection</h3>
+    <h3 id="saving-collection"><span class="emoji">💾</span> Saving Your Collection</h3>
     <ol start="4">
-        <li><span class="emoji"></span>💾</span> When you are done editing the Collection, save the Collection by
+        <li><span class="emoji">💾</span> When you are done editing the Collection, save the Collection by
             clicking the checkmark button in the top
             right corner.</li>
     </ol>
